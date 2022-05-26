@@ -1,0 +1,16 @@
+import React from "react";
+
+const Profil = (props) => {
+  return (
+    <div>
+      <h1> Mon nom est : {fullName} </h1>
+      <h1>Ma bio : {bio} </h1>
+      <h1> Ma profession {profession} </h1>
+      <button onClick={() => props.handleName(props.children)}>
+        Cliquez ici
+      </button>
+    </div>
+  );
+};
+
+export default Profil;
